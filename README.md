@@ -13,6 +13,7 @@ Executes a payload (calc.exe by default) in a separate thread
 onedrivedropper.csproj: Build configuration for the dropper
 
 This PoC demonstrates a common post-exploitation and initial access technique used by APT groups and red teams. Understanding these mechanisms is crucial for defensive security operations.
+
 MITRE ATT&CK: T1574.001, T1574.002
 
 Compile Instructions:
