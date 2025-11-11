@@ -6,11 +6,11 @@ This PoC exploits the Windows DLL search order mechanism to achieve code executi
 4. The proxy DLL forwards all exports to the legitimate version.dll while executing a payload
 
 Components:
-Program.cs: C# dropper that orchestrates the sideloading attack
-dllmain.cpp: Malicious proxy DLL that:
-Forwards all version.dll exports to the legitimate system DLL
-Executes a payload (calc.exe by default) in a separate thread
-onedrivedropper.csproj: Build configuration for the dropper
+- Program.cs: C# dropper that orchestrates the sideloading attack
+- dllmain.cpp: Malicious proxy DLL that:
+      -Forwards all version.dll exports to the legitimate system DLL
+      -Executes a payload (calc.exe by default) in a separate thread
+- onedrivedropper.csproj: Build configuration for the dropper
 
 This PoC demonstrates a common post-exploitation and initial access technique used by APT groups and red teams. Understanding these mechanisms is crucial for defensive security operations.
 
